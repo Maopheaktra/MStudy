@@ -1,0 +1,20 @@
+1.php artisan make:controller Api/StudentController --api(make controller that have function crud api).
+api.php to test api
+2.php artisan serve (run php)
+3.composer install to get vender
+4.JS(npm install)។
+5.In postman Preview for test(console result) & Pretty for result
+dd(1):
+dd($request->all());
+dd($request->name());
+Eloquent(work with model).
+	-all()
+	-first()
+	-find()
+	-where()
+	-wherein()
+	-create()
+	-update()
+	-delete()
+6.A model is used as a way for questioning data to and from the table within the database.
+7.query work with table and model work with table

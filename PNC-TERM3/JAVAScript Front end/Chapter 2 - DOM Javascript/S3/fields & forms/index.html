@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" name="teacherName" value="RADY" />RADY
+    <input type="checkbox" name="teacherName" value="HIM" />HIM
+    <input type="checkbox" name="teacherName" value="MENGHEANG" />MENGHEANG
+    <input type="checkbox" name="teacherName" value="YON" />YON
+    <button id="okButton" type="button">OK</button>
+    <p id="output"></p>
+    <script>
+
+        function apply() {
+            // On click on OK : write on the output : the selected fruit
+
+            // TIP 1 : you can use the getElementsByName to get the list of ALL element with the name
+            let teachers = document.getElementsByName('teacherName');
+            // TIP 2 : To check if the radio is checked or not, you can use the property : checked
+            name = ''
+            for (teacher of teachers) {
+                if (teacher.checked) {
+                    name += ' '  +  teacher.value;
+                    console.log(name);
+                }
+            }
+            let outPut = document.getElementById('output');
+            outPut.textContent = name
+
+        }
+
+        document.getElementById("okButton").addEventListener("click", apply);
+    </script>
+</body>
+
+</html>

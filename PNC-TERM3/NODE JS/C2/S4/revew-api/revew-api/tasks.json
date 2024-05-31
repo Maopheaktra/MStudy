@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "You updated",
+        "complete": false
+    },
+    {
+        "id": 2,
+        "title": "I am Pheaktra",
+        "complete": true
+    },
+    {
+        "id": 3,
+        "title": "I love python",
+        "completed": true
+    },
+    {
+        "id": 4,
+        "title": "I love Avocado",
+        "completed": true
+    },
+    {
+        "id": 5,
+        "title": "I am sleepy",
+        "completed": false
+    },
+    {
+        "id": 6,
+        "title": "p Mean",
+        "completed": false
+    }
+]

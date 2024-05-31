@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <input id="myText" type="text" value="abc" />
+  <br />
+  <input id="myPassword" type="password" value="abc" />
+  <br />
+  <input id="myFile" type="file" />
+  <br />
+  <button id="okButton" type="button">OK</button>
+
+  <p id="output"></p>
+
+  <script>
+    function apply() {
+      // On click on OK : write on the output :
+      //    - the value of the text
+      let text =document.querySelector('#myText').value;
+      //    - the value of the password
+      let password = document.querySelector('myPassword').value;
+      //    - the value of the file selected
+      let result = '';
+      let File = document.querySelector('myfile').value;
+      result = text + '-' + password + '-' + File;
+      // TIPS : you can use the .value property of each input
+      // TODO
+      document.querySelector('#output').textContent = result;
+    }
+
+    document.getElementById("okButton").addEventListener("click", apply);
+  </script>
+</body>
+
+</html>
